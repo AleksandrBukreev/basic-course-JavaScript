@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); //ответ: 2 префиксная форма инкремента
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1 постфиксная форма инкремента
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5 ++a равно 3(после строки 15) плюс 2 равно 5
+        //пример 4
+        d = 2 + b++;
+        alert(d);//ответ: 4 b++ равно 2 (после строки 18) плюс 2 равно 4
+
+        alert(a);//ответ: 3 (строка 15 ++a равно 2 строка 21 ++a равно 3)
+        alert(b);//ответ: 3 (строка 18 b++ постфиксная форма-равно 2 строка 24 b++ постфиксная форма-равно 3)
+    </script>
+</body>
+
+</html>
