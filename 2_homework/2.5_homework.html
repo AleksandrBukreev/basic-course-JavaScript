@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        function arithmeticOperation_1(a, b) {
+            return (a + b);
+        }
+        function arithmeticOperation_2(a, b) {
+            return (a - b);
+        }
+        function arithmeticOperation_3(a, b) {
+            return (a * b);
+        }
+        function arithmeticOperation_4(a, b) {
+            return (a / b);
+        }
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return arithmeticOperation_1(arg1, arg2);
+                case '-':
+                    return arithmeticOperation_2(arg1, arg2);
+                case '*':
+                    return arithmeticOperation_3(arg1, arg2);
+                case '/':
+                    return arithmeticOperation_4(arg1, arg2);
+            }
+        }
+        alert(mathOperation(5, 5, '+'));
+        alert(mathOperation(5, 5, '-'));
+        alert(mathOperation(5, 5, '*'));
+        alert(mathOperation(5, 5, '/'));
+    </script>
+
+</body>
+
+</html>
