@@ -81,7 +81,7 @@ function increaseProductCount(productId) {
  */
 
 function recalculateSumForProduct(productId) {
-    const productTotalRowEl = document.querySelector(`productTotalRow[data-productId="${productId}"]`);
+    const productTotalRowEl = document.querySelector(`.productTotalRow[data-productId="${productId}"]`);
     let totalPriceForRow = (basket[productId] * products[productId].price).toFixed(2);
     productTotalRowEl.textContent = totalPriceForRow;
 }
